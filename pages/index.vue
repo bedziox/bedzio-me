@@ -3,7 +3,7 @@
 const open = ref(false)
 </script>
 <template>
-    <div id="home" class="flex flex-col bg-primaryb h-screen">
+    <div id="home" class="flex flex-col items-center bg-primaryb h-screen">
         <div class="z-50 flex items-center justify-between w-full p-4 lg:hidden">
             <Icon class="z-50 cursor-pointer left-2 top-2" size="30" name="iconamoon:menu-burger-horizontal"
                 @click="open = true"></Icon>
@@ -13,10 +13,10 @@ const open = ref(false)
                 <Sidebar />
             </div>
         </div>
-        <Sidebar class="hidden lg:flex flex flex-row justify-center" />
-        <About id="about" class="mb-auto" />
-        <Skills id="skills" class="mb-auto" />
-        <Projects id="projects" class="mb-auto" />
-        <Footer class="sticky top-full" />
+        <Sidebar class="sticky top-0 w-75 hidden lg:flex flex-row justify-center m-5 bg-primaryb" />
+        <About id="about" class="max-w-screen-md" />
+        <Skills id="skills" class=" max-w-screen-md" />
+        <Projects id="projects" class="max-w-screen-md" />
+        <Footer class="top-full" />
     </div>
 </template>

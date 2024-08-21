@@ -21,9 +21,11 @@ const links = [{
 </script>
 
 <template>
-    <nav class="flex flex-col lg:flex-row justify-center align-center">
+    <nav class="sticky z-99 flex flex-col lg:flex-row justify-center align-center border-2 border-accentb rounded-xl">
         <header class="flex items-center justify-center p-4 hover:scale-[101%] transition cursor-pointer">
-            <p>bedzio.me</p>
+            <a href="/">
+                <p>bedzio.me</p>
+            </a>
         </header>
         <div class="grid gap-2 lg:flex">
             <div v-for="(item, index) in links" :key="index"

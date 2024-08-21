@@ -1,7 +1,6 @@
-
+import { defineNuxtConfig } from 'nuxt/config'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ['@nuxt/ui'],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -10,10 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@vesp/nuxt-fontawesome',
-    '@nuxt/ui'
-  ],
+  modules: ['@vesp/nuxt-fontawesome', "@nuxt/icon"],
   fontawesome: {
     icons: {
     },
