@@ -1,6 +1,8 @@
 <script setup lang="ts">
 
 const open = ref(false)
+
+
 </script>
 <template>
     <div id="home" class="flex flex-col items-center bg-primaryb h-screen">

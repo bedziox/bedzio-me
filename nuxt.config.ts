@@ -9,11 +9,21 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@vesp/nuxt-fontawesome', "@nuxt/icon"],
+  modules: [
+    '@vesp/nuxt-fontawesome',
+    "@nuxt/icon",
+    'nuxt-split-type',
+    "@nuxtjs/google-fonts"
+  ],
   fontawesome: {
     icons: {
     },
     component: 'fa',
     suffix: true
+  },
+  googleFonts: {
+    families: {
+      Roboto: true,
+    }
   }
 })
